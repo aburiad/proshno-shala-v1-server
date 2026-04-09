@@ -1,0 +1,521 @@
+{
+  "6": {
+    "label": "Class 6 — ষষ্ঠ শ্রেণি",
+    "icon": "📚",
+    "subjects": {
+      "math": {
+        "label": "গণিত",
+        "labelEn": "Mathematics",
+        "icon": "🔢",
+        "color": "#3498db",
+        "chapters": [
+          {
+            "id": "ch-1",
+            "title": "১. স্বাভাবিক সংখ্যা ও ভগ্নাংশ",
+            "icon": "🔢",
+            "progress": 25,
+            "subchapters": [
+              {
+                "id": "1.1",
+                "title": "অঙ্কপাতন",
+                "titleEn": "Numeration",
+                "duration": "১২ মিনিট",
+                "status": "done"
+              },
+              {
+                "id": "1.2",
+                "title": "দেশীয় সংখ্যাপঠন রীতি",
+                "titleEn": "Local Number Reading",
+                "duration": "১০ মিনিট",
+                "status": "done"
+              },
+              {
+                "id": "1.3",
+                "title": "আন্তর্জাতিক গণনা পদ্ধতি",
+                "titleEn": "International Numeration",
+                "duration": "১০ মিনিট",
+                "status": "progress"
+              },
+              {
+                "id": "1.4",
+                "title": "দেশীয় ও আন্তর্জাতিক গণনা রীতির পারস্পরিক সম্পর্ক",
+                "titleEn": "Local vs International System",
+                "duration": "১৫ মিনিট",
+                "status": "start"
+              },
+              {
+                "id": "1.5",
+                "title": "মৌলিক ও যৌগিক সংখ্যা",
+                "titleEn": "Prime & Composite Numbers",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.6",
+                "title": "সহমৌলিক সংখ্যা",
+                "titleEn": "Co-prime Numbers",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.7",
+                "title": "বিভাজ্যতা",
+                "titleEn": "Divisibility",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.8",
+                "title": "গরিষ্ঠ সাধারণ গুণনীয়ক (গ.সা.গু.)",
+                "titleEn": "GCD / HCF",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.9",
+                "title": "লঘিষ্ঠ সাধারণ গুণিতক (ল.সা.গু.)",
+                "titleEn": "LCM",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.10",
+                "title": "গ.সা.গু. ও ল.সা.গু. এর মধ্যে সম্পর্ক",
+                "titleEn": "Relation between GCD & LCM",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.11",
+                "title": "সাধারণ ভগ্নাংশ",
+                "titleEn": "Common Fractions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.12",
+                "title": "ভগ্নাংশের তুলনা",
+                "titleEn": "Comparing Fractions",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.13",
+                "title": "ভগ্নাংশের যোগ ও বিয়োগ",
+                "titleEn": "Addition & Subtraction of Fractions",
+                "duration": "১৮ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.14",
+                "title": "ভগ্নাংশের গুণ",
+                "titleEn": "Multiplication of Fractions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.15",
+                "title": "ভগ্নাংশের ভাগ",
+                "titleEn": "Division of Fractions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.16",
+                "title": "ভগ্নাংশের গুণনীয়ক ও গুণিতক",
+                "titleEn": "Factors & Multiples of Fractions",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.17",
+                "title": "ভগ্নাংশের গ.সা.গু.",
+                "titleEn": "GCD of Fractions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.18",
+                "title": "ভগ্নাংশের ল.সা.গু.",
+                "titleEn": "LCM of Fractions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.19",
+                "title": "ভগ্নাংশের সরলীকরণ",
+                "titleEn": "Simplification of Fractions",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.20",
+                "title": "দশমিক ভগ্নাংশের যোগ",
+                "titleEn": "Addition of Decimals",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.21",
+                "title": "দশমিক ভগ্নাংশের বিয়োগ",
+                "titleEn": "Subtraction of Decimals",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.22",
+                "title": "দশমিক ভগ্নাংশের গুণ",
+                "titleEn": "Multiplication of Decimals",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.23",
+                "title": "দশমিক ভগ্নাংশের ভাগ",
+                "titleEn": "Division of Decimals",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "1.24",
+                "title": "দশমিক ভগ্নাংশের গ.সা.গু. ও ল.সা.গু.",
+                "titleEn": "GCD & LCM of Decimals",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-2",
+            "title": "২. অনুপাত ও শতকরা",
+            "icon": "⚖️",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "2.1",
+                "title": "অনুপাত",
+                "titleEn": "Ratios",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "2.2",
+                "title": "বিভিন্ন অনুপাত",
+                "titleEn": "Types of Ratios",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "2.3",
+                "title": "অনুপাত ও শতকরার সম্পর্ক",
+                "titleEn": "Ratios & Percentages",
+                "duration": "১৮ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "2.4",
+                "title": "ঐকিক নিয়ম",
+                "titleEn": "Unitary Method",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-3",
+            "title": "৩. পূর্ণসংখ্যা",
+            "icon": "❄️",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "3.1",
+                "title": "ঋণাত্মক পূর্ণসংখ্যার ধারণা",
+                "titleEn": "Negative Integers",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.2",
+                "title": "ঋণাত্মক সংখ্যা লিখন পদ্ধতি",
+                "titleEn": "Writing Negative Numbers",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.3",
+                "title": "সংখ্যার হ্রাস ও বৃদ্ধি",
+                "titleEn": "Increase & Decrease",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.4",
+                "title": "ঋণাত্মক সংখ্যার ব্যবহার",
+                "titleEn": "Uses of Negative Numbers",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.5",
+                "title": "পূর্ণসংখ্যা",
+                "titleEn": "Integers",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.6",
+                "title": "সংখ্যারেখায় পূর্ণসংখ্যা স্থাপন",
+                "titleEn": "Integers on Number Line",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.7",
+                "title": "পূর্ণসংখ্যার ক্রম",
+                "titleEn": "Ordering Integers",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.8",
+                "title": "পূর্ণসংখ্যার যোগ",
+                "titleEn": "Addition of Integers",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.9",
+                "title": "সংখ্যারেখার সাহায্যে পূর্ণসংখ্যার যোগ",
+                "titleEn": "Addition on Number Line",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "3.10",
+                "title": "সংখ্যারেখার সাহায্যে পূর্ণসংখ্যার বিয়োগ",
+                "titleEn": "Subtraction on Number Line",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-4",
+            "title": "৪. বীজগণিতীয় রাশি",
+            "icon": "🔤",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "4.1",
+                "title": "বীজগণিতীয় প্রতীক, চলক, সহগ ও সূচক",
+                "titleEn": "Symbols, Variables & Coefficients",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "4.2",
+                "title": "বীজগণিতীয় রাশি ও পদ",
+                "titleEn": "Expressions & Terms",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "4.3",
+                "title": "সূচক",
+                "titleEn": "Exponents / Indices",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "4.4",
+                "title": "সদৃশ ও বিসদৃশ পদ",
+                "titleEn": "Like & Unlike Terms",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "4.5",
+                "title": "বীজগণিতীয় রাশির যোগ",
+                "titleEn": "Addition of Algebraic Expressions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "4.6",
+                "title": "বীজগণিতীয় রাশির বিয়োগ",
+                "titleEn": "Subtraction of Algebraic Expressions",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-5",
+            "title": "৫. সরল সমীকরণ",
+            "icon": "⚖️",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "5.1",
+                "title": "সমীকরণ",
+                "titleEn": "Equations",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "5.2",
+                "title": "সরল সমীকরণ",
+                "titleEn": "Simple Equations",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "5.3",
+                "title": "সরল সমীকরণের সমাধান",
+                "titleEn": "Solving Simple Equations",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "5.4",
+                "title": "বাস্তব সমস্যার ভিত্তিতে সমীকরণ গঠন ও সমাধান",
+                "titleEn": "Real-world Problems",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-6",
+            "title": "৬. জ্যামিতির মৌলিক ধারণা",
+            "icon": "📐",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "6.1",
+                "title": "স্থান, তল, রেখা ও বিন্দু",
+                "titleEn": "Space, Plane, Line & Point",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "6.2",
+                "title": "রেখা, রেখাংশ ও রশ্মি",
+                "titleEn": "Line, Segment & Ray",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "6.3",
+                "title": "কোণ",
+                "titleEn": "Angles",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "6.4",
+                "title": "সমান্তরাল রেখা",
+                "titleEn": "Parallel Lines",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "6.5",
+                "title": "ত্রিভুজ",
+                "titleEn": "Triangles",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "6.6",
+                "title": "চতুর্ভুজ",
+                "titleEn": "Quadrilaterals",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-7",
+            "title": "৭. ব্যবহারিক জ্যামিতি",
+            "icon": "📏",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "7.1",
+                "title": "রেখা অঙ্কন",
+                "titleEn": "Drawing Lines",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "7.2",
+                "title": "লম্ব অঙ্কন",
+                "titleEn": "Drawing Perpendiculars",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "7.3",
+                "title": "কোণ অঙ্কন",
+                "titleEn": "Drawing Angles",
+                "duration": "২০ মিনিট",
+                "status": "locked"
+              }
+            ]
+          },
+          {
+            "id": "ch-8",
+            "title": "৮. তথ্য ও উপাত্ত",
+            "icon": "📊",
+            "progress": 0,
+            "subchapters": [
+              {
+                "id": "8.1",
+                "title": "তথ্য ও উপাত্ত",
+                "titleEn": "Information & Data",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "8.2",
+                "title": "বিন্যস্ত ও অবিন্যস্ত উপাত্ত",
+                "titleEn": "Grouped & Ungrouped Data",
+                "duration": "১২ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "8.3",
+                "title": "গড়",
+                "titleEn": "Mean",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "8.4",
+                "title": "মধ্যক",
+                "titleEn": "Median",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "8.5",
+                "title": "প্রচুরক",
+                "titleEn": "Mode",
+                "duration": "১০ মিনিট",
+                "status": "locked"
+              },
+              {
+                "id": "8.6",
+                "title": "রেখাচিত্র",
+                "titleEn": "Line Graphs",
+                "duration": "১৫ মিনিট",
+                "status": "locked"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
