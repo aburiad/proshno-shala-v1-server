@@ -28,7 +28,7 @@ console.log('Server initialized. Port target:', PORT)
 const allowedOrigins = [
   process.env.CLIENT_URL,
   process.env.FRONTEND_URL,
-  'https://ai-hub-client-575245300411.europe-west1.run.app',
+  'https://proshno-shala-v1-server.onrender.com/',
   'http://localhost:5173',
 ].filter(Boolean)
 
