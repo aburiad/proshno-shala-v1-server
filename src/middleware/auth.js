@@ -2,16 +2,21 @@ const { supabaseAdmin } = require('../config/supabase')
 const { AppError } = require('./errorHandler')
 
 async function authenticate(req, res, next) {
+  console.log('[authMiddleware] Headers:', JSON.stringify(req.headers))
+  
   if (!supabaseAdmin) {
     return next(new AppError('Server missing Supabase configuration', 503))
   }
 
   const header = req.headers.authorization
   if (!header || !header.startsWith('Bearer ')) {
+    console.log('[authMiddleware] No Authorization header found')
     return next(new AppError('Authentication required', 401))
   }
 
   const token = header.split(' ')[1]
+  console.log('[authMiddleware] Token received:', token?.substring(0, 20) + '...')
+  
   const { data: authData, error: authErr } = await supabaseAdmin.auth.getUser(token)
   
   if (authErr || !authData?.user) {
