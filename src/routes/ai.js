@@ -1,12 +1,12 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const { scanImage } = require('../services/geminiService')
 const { AppError } = require('../middleware/errorHandler')
 const { checkLimit } = require('../middleware/subscription')
 const { supabaseAdmin } = require('../config/supabase')
+const { mockAuth } = require('../middleware/auth')
 
 const router = express.Router()
-router.use(authenticate)
+router.use(mockAuth)
 
 router.post('/scan', checkLimit('ai_scan'), async (req, res, next) => {
   try {

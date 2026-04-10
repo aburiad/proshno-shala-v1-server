@@ -1,11 +1,11 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const paperService = require('../services/paperService')
 const { AppError } = require('../middleware/errorHandler')
 const { checkLimit } = require('../middleware/subscription')
+const { mockAuth } = require('../middleware/auth')
 
 const router = express.Router()
-router.use(authenticate)
+router.use(mockAuth)
 
 router.post('/', checkLimit('paper_count'), async (req, res, next) => {
   try {

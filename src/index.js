@@ -9,7 +9,6 @@ const helmet = require('helmet')
 const morgan = require('morgan')
 const { errorHandler } = require('./middleware/errorHandler')
 
-const authRoutes = require('./routes/auth')
 const paperRoutes = require('./routes/papers')
 const examRoutes = require('./routes/exam')
 const paymentRoutes = require('./routes/payment')
@@ -70,7 +69,6 @@ app.get('/api/health', (req, res) => {
 })
 
 // Routes
-app.use('/api/auth', authRoutes)
 app.use('/api/papers', paperRoutes)
 app.use('/api/exam', examRoutes)
 app.use('/api/payment', paymentRoutes)

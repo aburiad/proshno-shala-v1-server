@@ -1,12 +1,11 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const questionService = require('../services/questionService')
 const { AppError } = require('../middleware/errorHandler')
 const { checkLimit } = require('../middleware/subscription')
+const { mockAuth } = require('../middleware/auth')
 
 const router = express.Router()
-
-router.use(authenticate)
+router.use(mockAuth)
 
 /**
  * POST /api/questions

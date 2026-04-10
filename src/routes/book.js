@@ -1,12 +1,9 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const { AppError } = require('../middleware/errorHandler')
 const bookService = require('../services/bookService')
 const { generateFromBook } = require('../services/geminiService')
 
 const router = express.Router()
-
-router.use(authenticate)
 
 /**
  * GET /api/book/subjects/:classNum

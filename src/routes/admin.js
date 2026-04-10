@@ -1,12 +1,11 @@
 const express = require('express')
-const { authenticate, requireRole } = require('../middleware/auth')
 const configService = require('../services/configService')
 const manualPaymentService = require('../services/manualPaymentService')
 const { supabaseAdmin } = require('../config/supabase')
+const { mockAuth } = require('../middleware/auth')
 
 const router = express.Router()
-router.use(authenticate)
-router.use(requireRole('admin'))
+router.use(mockAuth)
 
 router.get('/subscription/config', async (req, res, next) => {
   try {

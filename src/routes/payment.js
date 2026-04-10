@@ -3,8 +3,10 @@ const router = express.Router()
 const paymentService = require('../services/paymentService')
 const manualPaymentService = require('../services/manualPaymentService')
 const configService = require('../services/configService')
-const { authenticate } = require('../middleware/auth')
 const { AppError } = require('../middleware/errorHandler')
+const { mockAuth } = require('../middleware/auth')
+
+router.use(mockAuth)
 
 /**
  * GET /api/payment/config — Fetch public subscription settings (Price, features)
@@ -12,7 +14,6 @@ const { AppError } = require('../middleware/errorHandler')
 router.get('/config', async (req, res, next) => {
   try {
     const config = await configService.getConfig()
-    // Strip sensitive info like manual numbers if needed, but here they are needed for the UI
     res.json({ success: true, config })
   } catch (err) {
     next(err)
@@ -22,7 +23,7 @@ router.get('/config', async (req, res, next) => {
 /**
  * POST /api/payment/init — Start SSLCommerz payment process
  */
-router.post('/init', authenticate, async (req, res, next) => {
+router.post('/init', async (req, res, next) => {
   try {
     const { planId } = req.body
     const config = await configService.getConfig()
@@ -47,7 +48,7 @@ router.post('/init', authenticate, async (req, res, next) => {
 /**
  * POST /api/payment/manual — User submits a manual transaction ID
  */
-router.post('/manual', authenticate, async (req, res, next) => {
+router.post('/manual', async (req, res, next) => {
   try {
     const { amount, method, tranId, phone } = req.body
     const payment = await manualPaymentService.submitManualPayment(req.user.uid, {

@@ -1,15 +1,16 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const { checkLimit } = require('../middleware/subscription')
 const { scanImage } = require('../services/geminiService')
 const paperService = require('../services/paperService')
 const { generatePDF } = require('../services/pdfService')
 const { supabaseAdmin } = require('../config/supabase')
 const { AppError } = require('../middleware/errorHandler')
+const { mockAuth } = require('../middleware/auth')
 
 const router = express.Router()
+router.use(mockAuth)
 
-router.post('/generate-question', authenticate, checkLimit('ai_scan'), async (req, res, next) => {
+router.post('/generate-question', checkLimit('ai_scan'), async (req, res, next) => {
   try {
     const { image } = req.body
     if (!image) throw new AppError('Image is required', 400)
@@ -25,9 +26,9 @@ router.post('/generate-question', authenticate, checkLimit('ai_scan'), async (re
   }
 })
 
-router.get('/generate-pdf/:paperId', authenticate, async (req, res, next) => {
+router.get('/generate-pdf/:paperId', async (req, res, next) => {
   try {
-    const paper = await paperService.getById(req.params.paperId, req.user.uid)
+    const paper = await paperService.getById(req.params.paperId)
     if (!paper) throw new AppError('Paper not found', 404)
     const variant = req.query.variant || null
     const pdfBuffer = await generatePDF({ id: paper.id, ...paper }, { variant })

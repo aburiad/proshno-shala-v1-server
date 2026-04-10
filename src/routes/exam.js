@@ -1,15 +1,16 @@
 const express = require('express')
-const { authenticate } = require('../middleware/auth')
 const examService = require('../services/examService')
 const router = express.Router()
 
+const MOCK_USER_ID = 'anonymous-user'
+
 /**
- * POST /api/exam — create online exam (auth required)
+ * POST /api/exam — create online exam
  */
-router.post('/', authenticate, async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   try {
     const { paperId, config } = req.body
-    const exam = await examService.publishExam(req.user.uid, paperId, config || {})
+    const exam = await examService.publishExam(MOCK_USER_ID, paperId, config || {})
     res.status(201).json({ success: true, exam })
   } catch (err) {
     next(err)
@@ -17,11 +18,11 @@ router.post('/', authenticate, async (req, res, next) => {
 })
 
 /**
- * GET /api/exam — list exams (auth required)
+ * GET /api/exam — list exams
  */
-router.get('/', authenticate, async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
-    const exams = await examService.listExams(req.user.uid)
+    const exams = await examService.listExams(MOCK_USER_ID)
     res.json({ success: true, exams })
   } catch (err) {
     next(err)
@@ -53,11 +54,11 @@ router.post('/:examId/submit', async (req, res, next) => {
 })
 
 /**
- * GET /api/exam/:examId/results — teacher results (auth required)
+ * GET /api/exam/:examId/results — teacher results
  */
-router.get('/:examId/results', authenticate, async (req, res, next) => {
+router.get('/:examId/results', async (req, res, next) => {
   try {
-    const results = await examService.getExamResults(req.user.uid, req.params.examId)
+    const results = await examService.getExamResults(MOCK_USER_ID, req.params.examId)
     res.json({ success: true, results })
   } catch (err) {
     next(err)
